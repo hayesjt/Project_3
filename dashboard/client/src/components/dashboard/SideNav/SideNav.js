@@ -27,13 +27,6 @@ class SideNav extends Component {
   };
 
   render() {
-    const { projects } = this.props.projects;
-
-    let projectData = projects.sort().map(project => (
-      <li className="project-listing" key={project._id}>
-        <Link to={`/projects/${project._id}`}>{project.name}</Link>
-      </li>
-    ));
 
     return (
       <nav className="side">
