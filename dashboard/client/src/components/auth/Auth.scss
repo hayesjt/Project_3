@@ -15,12 +15,12 @@
 
 .auth-header {
   color: $black;
-  background-color: $white;
   padding: 1rem;
-  font-size: 20px;
+  font-size: 30px;
   text-align: center;
   margin-bottom: 1rem;
   font-weight: $medium;
+  font-family: $code;
 }
 
 .demo {
@@ -55,8 +55,8 @@
   width: 100%;
   padding-right: 2rem;
   margin-bottom: 0.75rem;
-  font-size: 14px;
-  color: $darkGray;
+  font-size: 18px;
+  color: $mainDark;
   font-family: $code;
 }
 
@@ -95,7 +95,7 @@
   margin-top: 1rem;
   color: #ffffff;
   background-color: $primaryOrange;
-  border-color: $primaryBlue;
+  border-color: $mainDark;
   border-radius: 4px;
   width: 100%;
   font-size: 16px;
@@ -104,7 +104,7 @@
 
   &:hover {
     background-color: $hoverBlue;
-    border-color: $hoverBlue;
+    border-color: $mainDark;
     transform: translateY(-2.5px);
     cursor: pointer;
     transition: all 0.25s ease 0s;
@@ -118,12 +118,12 @@
 }
 
 .link {
-  background-color: $lighterGray;
-  color: $darkGray;
-  text-decoration: none;
+  text-decoration: underline;
+  color: $lightDark;
   font-family: $code;
   transition: all 0.25s ease 0s;
   padding: 0.25rem;
+  border-radius: 4px;
 
   &:hover {
     color: $primaryBlue;

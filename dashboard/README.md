@@ -51,6 +51,15 @@ Overall we would like this dashboard to go above and beyond the apps that are pr
 
     <Insert Gif of working website when complete>
 
+# Colors/Patterns Used
+
+    Blue/Green = rgb(91,140,133)
+    Dark Blue = rgb(67,78,82)
+    Dark Yellow = rgb(176,161,96)
+    Light Yellow = rgb(236,206,109)
+    Red Error = rgb(234,60,85)
+    Hex Pattern = https://www.toptal.com/designers/subtlepatterns/gplay/
+
 # Team <incognito/> Members with roles:
 
     - Ashley Wegwerth

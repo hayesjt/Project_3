@@ -55,7 +55,7 @@ class Register extends Component {
 
     return (
       <div className="base-wrapper">
-        <div className="auth-header">Register for SmartHealth Below</div>
+        <div className="auth-header">SmartHealth Registration</div>
         <form className="auth-form" noValidate onSubmit={this.onSubmit}>
           <div className="auth-group">
             <label>
@@ -123,9 +123,9 @@ class Register extends Component {
             </button>
           </div>
           <div className="bottom-group">
-            <Link to="/" className="link">
+           <p>Already have an account? <Link to="/" className="link">
               Sign in
-            </Link>
+            </Link> </p>
           </div>
         </form>
       </div>

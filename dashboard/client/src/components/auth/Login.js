@@ -63,7 +63,7 @@ class Login extends Component {
 
     return (
       <div className="base-wrapper">
-        <div className="auth-header">Sign In</div>
+        <div className="auth-header">SmartHealth Sign In</div>
         <form className="auth-form" noValidate onSubmit={this.onSubmit}>
           <div className="auth-group">
             <label>
@@ -107,9 +107,9 @@ class Login extends Component {
             </button>
           </div>
           <div className="bottom-group">
-            <Link to="/register" className="link">
+            <p>Don't have an account? <Link to="/register" className="link">
               Sign up
-            </Link>
+            </Link></p>
           </div>
         </form>
       </div>
