@@ -1,0 +1,73 @@
+@import "../../../styles/base.scss";
+
+.jumbotron {
+    background-image: url("../../../img/hexpattern.png");
+    height: 100vh;
+}
+
+.my-card
+{
+    position:absolute;
+    left:40%;
+    top:-20px;
+    border-radius:50%;
+}
+
+.card-about{
+    border: 2px solid $primaryBlue;
+}
+.text-about{
+    color: $primaryBlue;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.card-heartrate{
+    border: 2px solid $primaryOrange;
+}
+.text-heartrate{
+    color: $primaryOrange;
+}
+
+.card-steps{
+    border: 2px solid $darkDark;
+}
+.text-steps{
+    color: $darkDark;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.card-sleep{
+    border: 2px solid $lightOrange;
+}
+.text-sleep{
+    color: $lightOrange;
+}
+
+.card-activity{
+    border: 2px solid $darkDark;
+}
+.text-activity{
+    color: $darkDark;
+    font-size: 20px;
+}
+
+.card-battery{
+    border: 2px solid $primaryBlue;
+}
+.text-battery{
+    color: $primaryBlue;
+}
+
+.bigcards {
+    margin-top: 50px;
+}
+
+.test-test {
+    margin-top: 200px;
+}

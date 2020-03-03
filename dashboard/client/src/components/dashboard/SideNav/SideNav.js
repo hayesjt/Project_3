@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import { NavLink, Link, withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import { logoutUser } from "../../../actions/authActions";
+import {Switch} from 'antd';
+import Toggle from './Toggle';
+import "./Toggle.scss";
 
 import "./SideNav.scss";
 
@@ -34,10 +37,29 @@ class SideNav extends Component {
           <li>
             <i
               onClick={this.toggleMenu}
-              className="material-icons hamburger-side-menu"
+              className="material-icons hamburger-side-menu fa fa-bars"
             >
-              Data Types
-              </i>
+            </i>
+          </li>
+        </ul>
+        <ul>
+          <li className = "about">
+            <p className = "togglename">About</p><Toggle className = "toggle"/>
+          </li>
+          <li className = "heartrate">
+          <p className = "togglename">Heart Rate</p><Toggle />
+          </li>
+          <li className = "steps">
+          <p className = "togglename">Steps</p><Toggle />
+          </li>
+          <li className = "sleep">
+          <p className = "togglename">Sleep</p><Toggle />
+          </li>
+          <li className = "activitytracker">
+          <p className = "togglename">Activity Tracker</p><Toggle />
+          </li>
+          <li className = "bodybattery">
+          <p className = "togglename">Body Battery</p><Toggle />
           </li>
         </ul>
       </nav>
