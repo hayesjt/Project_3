@@ -58,10 +58,10 @@ class TopNav extends Component {
         <div className="left-top">
           <i
             onClick={this.toggleMenu}
-            className="material-icons hamburger-top-menu"
+            className="material-icons hamburger-top-menu fa fa-bars"
           >
-            Data Types
           </i>
+          <i className="clock-icon fa fa-clock-o" aria-hidden="true"></i>
           <Link to="/dashboard">
             <h1 className="brand-header">
               SmartHealth<span className="brand-header-sub"></span>
@@ -76,7 +76,7 @@ class TopNav extends Component {
           </li>
           <li>
             <div onClick={this.handleProfileClick}>
-              <p>Profile Image</p>
+              <i className="profile-pic fa fa-user-circle" aria-hidden="true"></i>
             </div>
             {this.state.dropdown ? (
               <ul className="dropdown">
