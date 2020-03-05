@@ -9,9 +9,9 @@ import TopNav from "./TopNav/TopNav";
 import Dashboard from "./MainContent/Dashboard";
 import NotFound from "../404/404";
 import "./Layout.scss";
+import Cards from "./Cards/Cards";
 
 class Layout extends Component {
-
 
   render() {
     return (
@@ -28,11 +28,13 @@ class Layout extends Component {
               />
               <Route component={NotFound} />
             </Switch>
+            <Cards />
           </div>
         </div>
       </Router>
     );
   }
+
 }
 
 export default (Layout);

@@ -2,7 +2,9 @@ import React, { Component } from "react";
 import { NavLink, Link, withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import { logoutUser } from "../../../actions/authActions";
-
+import {Switch} from 'antd';
+import Toggle from './Toggle';
+import "./Toggle.scss";
 import "./SideNav.scss";
 
 class SideNav extends Component {
@@ -34,12 +36,84 @@ class SideNav extends Component {
           <li>
             <i
               onClick={this.toggleMenu}
-              className="material-icons hamburger-side-menu"
+              className="material-icons hamburger-side-menu fa fa-bars"
             >
-              Data Types
-              </i>
+            </i>
           </li>
         </ul>
+
+        <div className="row about sidenavitem">
+          <div className="col-sm-8 offset-sm-1">
+            <div className="row">
+              <div className="col-sm-9">
+                <div className="togglename">About</div>
+              </div>
+              <div className="col-sm-3">
+                <div className="toggle"> <Toggle /> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="row heartrate sidenavitem">
+          <div className="col-sm-8 offset-sm-1">
+            <div className="row">
+              <div className="col-sm-9">
+                <div className="togglename">Heart Rate</div>
+              </div>
+              <div className="col-sm-3">
+                <div className="toggle"> <Toggle /> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="row steps sidenavitem">
+          <div className="col-sm-8 offset-sm-1">
+            <div className="row">
+              <div className="col-sm-9">
+                <div className="togglename">Steps</div>
+              </div>
+              <div className="col-sm-3">
+                <div className="toggle"> <Toggle /> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="row sleep sidenavitem">
+          <div className="col-sm-8 offset-sm-1">
+            <div className="row">
+              <div className="col-sm-9">
+                <div className="togglename">Sleep</div>
+              </div>
+              <div className="col-sm-3">
+                <div className="toggle"> <Toggle /> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="row activitytracker sidenavitem">
+          <div className="col-sm-8 offset-sm-1">
+            <div className="row">
+              <div className="col-sm-9">
+                <div className="togglename">Activity Tracker</div>
+              </div>
+              <div className="col-sm-3">
+                <div className="toggle"> <Toggle /> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="row bodybattery sidenavitem">
+          <div className="col-sm-8 offset-sm-1">
+            <div className="row">
+              <div className="col-sm-9">
+                <div className="togglename">Body Battery</div>
+              </div>
+              <div className="col-sm-3">
+                <div className="toggle"> <Toggle /> </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </nav>
     );
   }

@@ -1,0 +1,15 @@
+@import "../../../styles/base.scss";
+
+.togglename {
+    color: $primaryOrange;
+    font-family: $code;
+}
+
+.toggle {
+    float: left;
+    // margin-left: 500px !important;
+}
+
+.sidenavitem {
+    margin-top: 15px;
+  }
