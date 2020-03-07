@@ -10,8 +10,13 @@ mongoose.connect(
 
 const dataSeed = [
   {
+
     steps: 723,
     heartrate: 63,
+
+    steps: 10000,
+    heartrate: 72,
+
     sleep: 7,
     bodybattery: 82,
     date: new Date(Date.now())
