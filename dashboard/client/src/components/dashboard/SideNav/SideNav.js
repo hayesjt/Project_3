@@ -42,11 +42,11 @@ class SideNav extends Component {
           </li>
         </ul>
 
-        <div className="row about sidenavitem">
+        <div className="row bodybattery sidenavitem">
           <div className="col-sm-8 offset-sm-1">
             <div className="row">
               <div className="col-sm-9">
-                <div className="togglename">About</div>
+                <div className="togglename">Body Battery</div>
               </div>
               <div className="col-sm-3">
                 <div className="toggle"> <Toggle /> </div>
@@ -102,11 +102,11 @@ class SideNav extends Component {
             </div>
           </div>
         </div>
-        <div className="row bodybattery sidenavitem">
+        <div className="row about sidenavitem">
           <div className="col-sm-8 offset-sm-1">
             <div className="row">
               <div className="col-sm-9">
-                <div className="togglename">Body Battery</div>
+                <div className="togglename">About</div>
               </div>
               <div className="col-sm-3">
                 <div className="toggle"> <Toggle /> </div>
