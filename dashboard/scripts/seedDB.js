@@ -10,17 +10,39 @@ mongoose.connect(
 
 const dataSeed = [
   {
-
     steps: 723,
     heartrate: 63,
-
-    steps: 10000,
-    heartrate: 72,
-
     sleep: 7,
     bodybattery: 82,
-    date: new Date(Date.now())
+    date: 'new Date(Date.now())'
   }
+  // {
+  //   steps: 812,
+  //   date: 'monday'
+  // },
+  // {
+  //   steps: 915,
+  //   date: 'tuesday'
+  // },
+  // {
+  //   steps: 1000,
+  //   date: 'wednesday'
+  // },
+  // {
+  //   steps: 315,
+  //   date: 'thursday'
+  // }, {
+  //   steps: 548,
+  //   date: 'friday'
+  // },
+  // {
+  //   steps: 618,
+  //   date: 'saturday'
+  // },
+  // {
+  //   steps: 728,
+  //   date: 'sunday'
+  // }
 ];
 
 db.Data
