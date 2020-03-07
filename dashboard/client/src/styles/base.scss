@@ -1,19 +1,24 @@
-// base colors
+// basic colors used
 $black: #212121;
 $white: #fff;
+// gray pallets for details
 $lighterGray: #fafafa;
 $lightGray: #fefefe;
 $gray: #e0e0e0;
 $darkGray: #616161;
+// Mainly used on sign in/register pages for btns
+$primaryOrange: #f09f20;
+$formBtnColor: #1c4654;
+// this color is for error messages 
+$red: rgb(234,60,85);
+// colors for modules on dashboard page
 $primaryBlue: #63a26f;
 $hoverBlue: #63a26f;
 $red: rgb(234,60,85);
 $mainDark: #cbc9cc;
 $lightDark: #045253;
-$primaryOrange: #f09f20;
 $lightOrange: #fbd489;
 $darkDark: #2c545a;
-
 
 // font weights
 $light: 300;

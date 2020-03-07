@@ -5,6 +5,7 @@ import { connect } from "react-redux";
 import { loginUser } from "../../actions/authActions";
 
 import "./Auth.scss";
+import watch from '../../img/yellowwatch_crop2.jpeg';
 
 class Login extends Component {
   constructor() {
@@ -63,10 +64,10 @@ class Login extends Component {
 
     return (
       <div className="base-wrapper">
+        {/* <img className="watchimg" src={watch} alt="persons arm with smart watch"></img> */}
         <div className="auth-header">SmartHealth Sign In</div>
         <form className="auth-form" noValidate onSubmit={this.onSubmit}>
           <div className="auth-group">
-            <label>
               <div className="auth-label">Email address</div>
               <input
                 onChange={this.onChange}
@@ -80,11 +81,9 @@ class Login extends Component {
                 {errors.email}
                 {errors.emailnotfound}
               </div>
-            </label>
           </div>
 
           <div className="auth-group">
-            <label>
               <div className="auth-label">Password</div>
               <input
                 onChange={this.onChange}
@@ -98,7 +97,6 @@ class Login extends Component {
                 {errors.password}
                 {errors.passwordincorrect}
               </div>
-            </label>
           </div>
 
           <div>

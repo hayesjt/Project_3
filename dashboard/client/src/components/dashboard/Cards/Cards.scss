@@ -5,11 +5,18 @@
     height: 100vh;
 }
 
-.my-card
+.small-card
 {
     position:absolute;
     left:40%;
     top:-20px;
+    border-radius:50%;
+}
+
+.big-card {
+    position:absolute;
+    left:45%;
+    top:-30px;
     border-radius:50%;
 }
 
@@ -47,6 +54,10 @@
 }
 .text-sleep{
     color: $lightOrange;
+}
+
+.bigtext {
+    margin-top: 15px;
 }
 
 .card-activity{
