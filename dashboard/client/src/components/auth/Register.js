@@ -58,63 +58,55 @@ class Register extends Component {
         <div className="auth-header">SmartHealth Registration</div>
         <form className="auth-form" noValidate onSubmit={this.onSubmit}>
           <div className="auth-group">
-            <label>
-              <div className="auth-label">First Name</div>
-              <input
-                onChange={this.onChange}
-                value={this.state.firstname}
-                error={errors.firstname}
-                id="firstname"
-                type="text"
-                className="auth-input"
-              />
-              <div className="auth-error">{errors.firstname}</div>
-            </label>
+            <div className="auth-label">First Name</div>
+            <input
+              onChange={this.onChange}
+              value={this.state.firstname}
+              error={errors.firstname}
+              id="firstname"
+              type="text"
+              className="auth-input"
+            />
+            <div className="auth-error">{errors.firstname}</div>
           </div>
 
           <div className="auth-group">
-            <label>
-              <div className="auth-label">Last Name</div>
-              <input
-                onChange={this.onChange}
-                value={this.state.lastname}
-                error={errors.lastname}
-                id="lastname"
-                type="email"
-                className="auth-input"
-              />
-              <div className="auth-error">{errors.lastname}</div>
-            </label>
+            <div className="auth-label">Last Name</div>
+            <input
+              onChange={this.onChange}
+              value={this.state.lastname}
+              error={errors.lastname}
+              id="lastname"
+              type="email"
+              className="auth-input"
+            />
+            <div className="auth-error">{errors.lastname}</div>
           </div>
 
           <div className="auth-group">
-            <label>
-              <div className="auth-label">Email address</div>
-              <input
-                onChange={this.onChange}
-                value={this.state.email}
-                error={errors.email}
-                id="email"
-                type="email"
-                className="auth-input"
-              />
-              <div className="auth-error">{errors.email}</div>
-            </label>
+            <div className="auth-label">Email address</div>
+            <input
+              onChange={this.onChange}
+              value={this.state.email}
+              error={errors.email}
+              id="email"
+              type="email"
+              className="auth-input"
+            />
+            <div className="auth-error">{errors.email}</div>
           </div>
 
           <div className="auth-group">
-            <label>
-              <div className="auth-label">Password</div>
-              <input
-                onChange={this.onChange}
-                value={this.state.password}
-                error={errors.password}
-                id="password"
-                type="password"
-                className="auth-input"
-              />
-              <div className="auth-error">{errors.password}</div>
-            </label>
+            <div className="auth-label">Password</div>
+            <input
+              onChange={this.onChange}
+              value={this.state.password}
+              error={errors.password}
+              id="password"
+              type="password"
+              className="auth-input"
+            />
+            <div className="auth-error">{errors.password}</div>
           </div>
 
           <div>
@@ -123,7 +115,7 @@ class Register extends Component {
             </button>
           </div>
           <div className="bottom-group">
-           <p>Already have an account? <Link to="/" className="link">
+            <p>Already have an account? <Link to="/" className="link">
               Sign in
             </Link> </p>
           </div>

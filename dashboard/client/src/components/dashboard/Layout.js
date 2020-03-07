@@ -10,10 +10,29 @@ import Dashboard from "./MainContent/Dashboard";
 import NotFound from "../404/404";
 import "./Layout.scss";
 import Cards from "./Cards/Cards";
+import API from '../../utils/API'
 
 class Layout extends Component {
+  constructor(props){
+    super(props);
+    this.state ={
+      dbResult: {}
+    }
+  }
+
+  getDBResult=() =>{
+    API.getData().then(res=>{
+      console.log(res.data)
+      this.setState({dbResult: res.data[0]})
+    })
+  }
+
+  componentDidMount(){
+    this.getDBResult()
+  }
 
   render() {
+    console.log(this.state.dbResult)
     return (
       <Router>
         <div className="wrapper">
@@ -28,7 +47,12 @@ class Layout extends Component {
               />
               <Route component={NotFound} />
             </Switch>
-            <Cards />
+            <Cards 
+            steps={this.state.dbResult.steps} 
+            heartrate={this.state.dbResult.heartrate} 
+            sleep={this.state.dbResult.sleep} 
+            bodybattery={this.state.dbResult.bodybattery}
+            />
           </div>
         </div>
       </Router>
