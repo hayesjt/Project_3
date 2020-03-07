@@ -2,10 +2,6 @@ import React from "react";
 import "./Cards.scss";
 
 
-
-function Cards({steps, heartrate, sleep, bodybattery}) {
-
-=======
 function Cards({steps, heartrate, sleep, bodybattery}) {
 
   return (
@@ -14,28 +10,17 @@ function Cards({steps, heartrate, sleep, bodybattery}) {
     <div class="jumbotron">
         <div class="row w-100">
             <div class="col-md-3">
-
                 <div class="card card-battery mx-sm-1 p-3">
                     <div class="card card-battery shadow text-battery p-3 small-card" ><span class="fa fa-battery-half" aria-hidden="true"></span></div>
                     <div class="text-info text-center mt-3"><h4>Body Battery</h4></div>
                     <div class="text-info text-center mt-2"><h1>{bodybattery}%</h1></div>
-
-                <div class="card card-about mx-sm-1 p-3">
-                    <div class="card card-about shadow text-about p-3 small-card" ><span class="fa fa-question fa-7x" aria-hidden="true"></span></div>
-                    <div class="text-info text-center mt-3"><h4>About</h4></div>
-                    <div class="text-info text-center mt-2"><h1>Read Me</h1></div>
-
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="card card-heartrate mx-sm-1 p-3">
                     <div class="card card-heartrate shadow text-heartrate p-3 small-card"><span class="fa fa-heart fa-xs" aria-hidden="true"></span></div>
                     <div class="text-success text-center mt-3"><h4>Heart Rate</h4></div>
-
                     <div class="text-success text-center mt-2"><h1>{heartrate} BPM</h1></div>
-
-                    <div class="text-success text-center mt-2"><h1>{bodybattery} BPM</h1></div>
-
                 </div>
             </div>
             <div class="col-md-3">
@@ -64,17 +49,10 @@ function Cards({steps, heartrate, sleep, bodybattery}) {
             </div>
             
             <div class="col-md-6">
-
                 <div class="card card-about">
                     <div class="card card-about shadow text-about p-3 big-card" ><span class="fa fa-question fa-7x " aria-hidden="true"></span></div>
                     <div class="text-warning text-center mt-3"><h4 className="bigtext">About</h4></div>
                     <div class="text-warning text-center mt-2"><h1>about content</h1></div>
-
-                <div class="card card-battery">
-                    <div class="card card-battery shadow text-battery p-3 big-card" ><span class="fa fa-battery-half fa-xs" aria-hidden="true"></span></div>
-                    <div class="text-warning text-center mt-3"><h4 className="bigtext">Body Battery</h4></div>
-                    <div class="text-warning text-center mt-2"><h1>{bodybattery}</h1></div>
-
                 </div>
             </div>
         </div>
