@@ -88,9 +88,8 @@ export default class Cards extends Component {
                             <div class="card card-activity">
                                 <div class="card card-activity shadow text-activity p-3 big-card text-center"><span class="fa fa-grav fa-xs" aria-hidden="true"></span></div>
                                 <div class="text-warning text-center mt-3"><h4 className="bigtext">Weekly Steps</h4></div>
+                                <ResponsiveContainer width={550} height={440}>
                                 <LineChart
-                              width={550}
-                              height={440}
                               data={data}
                               margin={{ top: 5, right: 20, left: 10, bottom: 5 }}
                           >
@@ -102,6 +101,7 @@ export default class Cards extends Component {
                               <Line type="monotone" dataKey="steps" stroke="#8884d8" />
                               <Line type="monotone" dataKey="date" stroke="#82ca9d" />
                           </LineChart>
+                          </ResponsiveContainer>
                             </div>
                         : null}
                     </div>            
