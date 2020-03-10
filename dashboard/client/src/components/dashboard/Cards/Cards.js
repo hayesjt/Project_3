@@ -4,8 +4,40 @@ import Ashley from "../../../img/ashley.png";
 import Haylee from "../../../img/haylee.png";
 import Ka from "../../../img/ka.png";
 import Mai from "../../../img/mai.png";
+import { ResponsiveContainer, LineChart, Line, XAxis, YAxis, ReferenceLine,
+    ReferenceDot, Tooltip, CartesianGrid, Legend, Brush, ErrorBar, AreaChart, Area,
+    Label, LabelList } from 'recharts';
+
+    let data =  [{
+        steps: 6750,
+        date: 'Monday'
+    },
+    {
+        steps: 8456,
+        date: 'Tuesday'
+    },
+    {
+        steps: 7345,
+        date: 'Wednesday'
+    },
+    {
+        steps: 9687,
+        date: 'Thursday'
+    }, {
+        steps: 8064,
+        date: 'Friday'
+    },
+    {
+        steps: 7058,
+        date: 'Saturday'
+    },
+    {
+        steps: 8365,
+        date: 'Sunday'
+    }];
 
 export default class Cards extends Component {
+
     render() {
         const {component: about, steps, heartrate, sleep, bodybattery} = this.props;
     return (
@@ -34,8 +66,8 @@ export default class Cards extends Component {
                         {this.props.togglesteps ?
                             <div class="card card-steps mx-sm-1 p-3">
                                 <div class="card card-steps shadow text-steps p-3 small-card"><span class="fa fa-male fa-xs" aria-hidden="true"></span></div>
-                                <div class="text-danger text-center mt-3"><h4>Steps</h4></div>
-                                <div class="text-danger text-center mt-2"><h1>{steps} STEPS</h1></div>
+                                <div class="text-danger text-center mt-3"><h4> Today's Steps</h4></div>
+                                <div class="text-danger text-center mt-2"><h1>{steps}</h1></div>
                             </div>
                         : null}
                     </div>
@@ -55,8 +87,21 @@ export default class Cards extends Component {
                         {this.props.toggleactivity ?
                             <div class="card card-activity">
                                 <div class="card card-activity shadow text-activity p-3 big-card text-center"><span class="fa fa-grav fa-xs" aria-hidden="true"></span></div>
-                                <div class="text-warning text-center mt-3"><h4 className="bigtext">Activity Tracker</h4></div>
-                                <div class="text-warning text-center mt-2"><h1>346</h1></div>
+                                <div class="text-warning text-center mt-3"><h4 className="bigtext">Weekly Steps</h4></div>
+                                <LineChart
+                              width={550}
+                              height={440}
+                              data={data}
+                              margin={{ top: 5, right: 20, left: 10, bottom: 5 }}
+                          >
+                              <XAxis dataKey="date" />
+                              <YAxis dataKey="steps"/>
+                              
+                              <Tooltip />
+                              <CartesianGrid stroke="#f5f5f5" />
+                              <Line type="monotone" dataKey="steps" stroke="#8884d8" />
+                              <Line type="monotone" dataKey="date" stroke="#82ca9d" />
+                          </LineChart>
                             </div>
                         : null}
                     </div>            

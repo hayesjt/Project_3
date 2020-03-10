@@ -101,7 +101,7 @@ class SideNav extends Component {
           <div className="col-sm-8 offset-sm-1">
             <div className="row">
               <div className="col-sm-9">
-                <div className="togglename">Activity Tracker</div>
+                <div className="togglename">Weekly Steps</div>
               </div>
               <div className="col-sm-3">
                 <div className="toggle">
