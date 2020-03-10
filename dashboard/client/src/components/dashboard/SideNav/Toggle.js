@@ -1,20 +1,38 @@
 import React, { useState } from 'react';
-import { Switch } from 'antd';
+// import { Switch } from 'antd';
+import "./Toggle.scss";
 
-const Toggle = () => {
+const Toggle = ({changeToggle, name}) => {
   const [toggle, setToggle] = useState(false);
   const toggler = () => {
+    if (name === 'togglebattery'){
+      changeToggle('togglebattery');
+    }
+    else if (name === 'toggleheartRate'){
+      changeToggle('toggleheartRate');
+    }
+    else if (name === 'togglesteps'){
+      changeToggle('togglesteps');
+    }
+    else if (name === 'togglesleep'){
+      changeToggle('togglesleep');
+    }
+    else if (name === 'toggleactivity'){
+      changeToggle('toggleactivity');
+    }
+    else if (name === 'toggleabout'){
+      changeToggle('toggleabout');
+    }
     toggle ? setToggle(false): setToggle(true);
   }
 
   return (
-    <div className="App">
-      <Switch onClick={toggler}/>
-      {
-        toggle ?
-        <span><img src="https://image.shutterstock.com/image-vector/default-avatar-profile-icon-grey-260nw-518740768.jpg" alt="woman" width="200" height="200" /></span> :
-        <span></span>
-      }
+    <div className="toggleswitch" onClick={toggler}>
+      <input
+        type="checkbox"
+        class="mgc-switch"
+        defaultChecked={true}
+      /> 
     </div>
   );
 }
