@@ -16,33 +16,6 @@ const dataSeed = [
     bodybattery: 82,
     date: 'new Date(Date.now())'
   }
-  // {
-  //   steps: 812,
-  //   date: 'monday'
-  // },
-  // {
-  //   steps: 915,
-  //   date: 'tuesday'
-  // },
-  // {
-  //   steps: 1000,
-  //   date: 'wednesday'
-  // },
-  // {
-  //   steps: 315,
-  //   date: 'thursday'
-  // }, {
-  //   steps: 548,
-  //   date: 'friday'
-  // },
-  // {
-  //   steps: 618,
-  //   date: 'saturday'
-  // },
-  // {
-  //   steps: 728,
-  //   date: 'sunday'
-  // }
 ];
 
 db.Data

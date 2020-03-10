@@ -22,6 +22,8 @@
 
 .card-about{
     border: 2px solid $primaryBlue;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 .text-about{
     color: $primaryBlue;
@@ -81,4 +83,28 @@
 
 .test-test {
     margin-top: 200px;
+}
+
+.thumbnail {
+    text-align: center;
+}
+
+.contact {
+    text-align: center;
+}
+
+.ashleypic {
+    border-radius: 50%;
+}
+
+.hayleepic {
+    border-radius: 50%;
+}
+
+.kapic {
+    border-radius: 50%;
+}
+
+.maipic {
+    border-radius: 50%;
 }

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { NavLink, Link, withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import { logoutUser } from "../../../actions/authActions";
-import {Switch} from 'antd';
+// import {Switch} from 'antd';
 import Toggle from './Toggle';
 import "./Toggle.scss";
 import "./SideNav.scss";
@@ -29,7 +29,6 @@ class SideNav extends Component {
   };
 
   render() {
-
     return (
       <nav className="side">
         <ul className="top">
@@ -49,7 +48,9 @@ class SideNav extends Component {
                 <div className="togglename">Body Battery</div>
               </div>
               <div className="col-sm-3">
-                <div className="toggle"> <Toggle /> </div>
+                <div className="toggle">
+                  <Toggle name='togglebattery' changeToggle={this.props.changeToggle}/>
+                </div>
               </div>
             </div>
           </div>
@@ -61,7 +62,9 @@ class SideNav extends Component {
                 <div className="togglename">Heart Rate</div>
               </div>
               <div className="col-sm-3">
-                <div className="toggle"> <Toggle /> </div>
+                <div className="toggle">
+                  <Toggle name='toggleheartRate' changeToggle={this.props.changeToggle} />
+                </div>
               </div>
             </div>
           </div>
@@ -73,7 +76,9 @@ class SideNav extends Component {
                 <div className="togglename">Steps</div>
               </div>
               <div className="col-sm-3">
-                <div className="toggle"> <Toggle /> </div>
+                <div className="toggle">
+                  <Toggle name='togglesteps' changeToggle={this.props.changeToggle} />
+                </div>
               </div>
             </div>
           </div>
@@ -85,7 +90,9 @@ class SideNav extends Component {
                 <div className="togglename">Sleep</div>
               </div>
               <div className="col-sm-3">
-                <div className="toggle"> <Toggle /> </div>
+                <div className="toggle">
+                  <Toggle name='togglesleep' changeToggle={this.props.changeToggle}/>
+                </div>
               </div>
             </div>
           </div>
@@ -97,7 +104,9 @@ class SideNav extends Component {
                 <div className="togglename">Activity Tracker</div>
               </div>
               <div className="col-sm-3">
-                <div className="toggle"> <Toggle /> </div>
+                <div className="toggle">
+                  <Toggle name='toggleactivity' changeToggle={this.props.changeToggle}/>
+                </div>
               </div>
             </div>
           </div>
@@ -109,7 +118,9 @@ class SideNav extends Component {
                 <div className="togglename">About</div>
               </div>
               <div className="col-sm-3">
-                <div className="toggle"> <Toggle /> </div>
+                <div  className="toggle">
+                  <Toggle name='toggleabout' changeToggle={this.props.changeToggle}/>
+                </div>
               </div>
             </div>
           </div>
