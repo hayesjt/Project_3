@@ -49,7 +49,12 @@ app.use("/", routes)
     res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
   });
 
-
+  app.use((err, req, res, next) => {
+    console.log(err);
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+});
 
 
 app.listen(port, () => console.log(`Server up and running on port ${port} !`));
