@@ -20,6 +20,8 @@ app.use(bodyParser.json());
 // DB Config
 const db = (process.env.MONGODDB || "mongodb://localhost/Users");
 
+console.log("db", db);
+
 // Connect to MongoDB
 mongoose
   .connect(
