@@ -43,15 +43,20 @@ app.use("/", routes)
 
 
 // Serve static assets (build folder) if in production
-if (process.env.NODE_ENV === "production") {
+
   // Set static folder
   app.use(express.static("client/build"));
 
   app.get("*", (req, res) => {
     res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
   });
-}
 
+  app.use((err, req, res, next) => {
+    console.log(err);
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+});
 
 
 app.listen(port, () => console.log(`Server up and running on port ${port} !`));
