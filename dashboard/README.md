@@ -22,13 +22,13 @@ Overall, whatever number, goal, or data you want to track, you can. In real time
 
     1. Step Count
     2. Current Heart Rate
-    3. Sleep Hour Count
+    3. Calories Burned
     4. Activity Tracker
     5. Body Battery
 
 # Database Information:
 
-We've reached out to some companies to use their API for an example but have not gotten responses yet. Once we do, we plan on connecting the API. For now, all entries are stored in a Mongo DB and used as sample data.
+We've reached out to some companies to use their API and have only gotten access to Google Fit's API.  We plan on connecting with more smart watch API's. For now, entries are stored in a Mongo DB and used as sample data, along with Google Fit's API database.
 
 Main Table = Users (storing simple user information).
 Sub Tables = Tables are made for each working component in react then connected to the main table by forge in keys. 
@@ -49,7 +49,7 @@ Overall, we would like this dashboard to go above and beyond the apps that are p
     1. Log in using sample log in information provided at top.
     2. Use the toggles on the left side to show the data you're interested in.
 
-    <Insert Gif of working website when complete>
+<img src='smartHealthGif.gif' />
 
 # Colors/Patterns Used
 
@@ -66,3 +66,7 @@ Overall, we would like this dashboard to go above and beyond the apps that are p
     - Haylee Thomas-Kuhlmann
     - Ka Vang
     - Mai Xiong
+
+# Link
+
+Check out our site here: ['SmartHealth'](https://smartheath.herokuapp.com/dashboard)!
