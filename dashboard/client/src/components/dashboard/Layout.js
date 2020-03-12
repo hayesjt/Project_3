@@ -11,7 +11,6 @@ import NotFound from "../404/404";
 import "./Layout.scss";
 import Cards from "./Cards/Cards";
 import API from '../../utils/API'
-import Toggle from './SideNav/Toggle';
 
 class Layout extends Component {
   state = {
