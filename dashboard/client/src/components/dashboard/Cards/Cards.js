@@ -75,8 +75,8 @@ export default class Cards extends Component {
                         {this.props.togglesleep ?
                             <div class="card card-sleep mx-sm-1 p-3">
                                 <div class="card card-sleep shadow text-sleep p-3 small-card"><span class="fa fa-bed fa-xs" aria-hidden="true"></span></div>
-                                <div class="text-warning text-center mt-3"><h4>Sleep</h4></div>
-                                <div class="text-warning text-center mt-2"><h1>{sleep} HRS</h1></div>
+                                <div class="text-warning text-center mt-3"><h4>Calories Burned</h4></div>
+                                <div class="text-warning text-center mt-2"><h1>{Math.round(sleep)}</h1></div>
                             </div>
                         : null}
                     </div>

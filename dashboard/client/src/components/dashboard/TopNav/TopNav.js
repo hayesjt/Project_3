@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { logoutUser } from "../../../actions/authActions";
 import { Link, withRouter } from "react-router-dom";
+import LoginButton from "../LoginButton/LoginButton.js";
+
 
 import "./TopNav.scss";
 
@@ -29,6 +31,7 @@ class TopNav extends Component {
     e.preventDefault();
     this.props.logoutUser(this.props.history);
     window.location.href = "/";
+    localStorage.clear();
   };
 
   handleProfileClick = e => {
@@ -83,6 +86,7 @@ class TopNav extends Component {
                 <Link to="/dashboard">
                   <li>Dashboard</li>
                 </Link>
+                <div className="googleLogin"><LoginButton /></div>
                 <li onClick={this.onLogoutClick}>Sign Out</li>
               </ul>
             ) : null}

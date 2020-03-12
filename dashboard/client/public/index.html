@@ -19,8 +19,23 @@
 
   <!------ Style for Toggle ---------->
   <link rel="stylesheet" type="text/css" href="https://unpkg.com/magic-input/dist/magic-input.min.css">
+  
+  <meta name="google-signin-client_id"
+  content="450654138292-vck54fkkt0p19or0rt71pjmrg5lv625d.apps.googleusercontent.com">
 
   <title>SmartHealth Dashboard</title>
+  <script src="https://apis.google.com/js/platform.js?onload=triggerGoogleLoaded" async defer></script>
+  <script type="text/javascript">
+    function triggerGoogleLoaded() {
+      console.log("google event loaded");
+      gapi.load('auth2', () => {
+        gapi.auth2.init().then(() => {
+          // DO NOT ATTEMPT TO RENDER BUTTON UNTIL THE 'Init' PROMISE RETURNS
+          window.dispatchEvent(new Event('google-loaded'));
+        });
+      });
+    }
+  </script>
 </head>
 
 <body>

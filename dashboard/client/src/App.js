@@ -22,7 +22,7 @@ import NotFound from "./components/404/404";
 import "./App.scss";
 
 // Check for token to keep user logged in
-if (localStorage.jwtTokenTeams) {
+if (.jwtTokenTeams) {
   // Set auth token header auth
   const token = JSON.parse(localStorage.jwtTokenTeams);
   setAuthToken(token);
