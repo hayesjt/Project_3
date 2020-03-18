@@ -49,7 +49,7 @@ Overall, we would like this dashboard to go above and beyond the apps that are p
     1. Log in using sample log in information provided at top.
     2. Use the toggles on the left side to show the data you're interested in.
 
-<img src='smartHealthGif.gif' />
+<img src='dashboard/smartHealthGif.gif' />
 
 # Colors/Patterns Used
 
